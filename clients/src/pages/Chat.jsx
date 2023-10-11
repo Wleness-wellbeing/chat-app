@@ -162,7 +162,7 @@ function Chat(props) {
 
                     {showPicker ? <BsFillEmojiSmileFill className='w-[20px] h-[20px] text-[#ffb02e] border-[black]' /> : <BsEmojiSmile className='w-[20px] h-[20px]' />}
                   </div>
-                  <button onClick={(e) => keyDownFunction(e)} className='bg-[#f8f9fa] border-[2px] border-[#d4d4d4] text-[14px] px-2 py-[3px] text-[#9e9e9e] font-medium rounded-[7px] -mt-1'>Send</button>
+                  <button onClick={(e) => keyDownFunction(e)} className='bg-[#f8f9fa] border-[2px] border-[#d4d4d4] text-[14px] px-2 py-[3px] text-[#9e9e9e] font-medium rounded-[7px] -mt-1 hover:bg-blue-600 hover:text-white'>Send</button>
                 </div>
               </div>
             </div>
@@ -171,7 +171,8 @@ function Chat(props) {
             <div className='relative'>
               <div className='absolute top-[40vh] left-[44%] flex flex-col items-center justify-center gap-y-3'>
                 <img className='w-[50px] h-[50px] rounded-[25px]' alt="User profile" src={activeUser.profilePic} />
-                <h3 className='text-[#111b21] text-[20px] font-medium tracking-wider'>Welcome <span className='text-[#166e48] text-[19px] font-bold'> {activeUser.name}</span></h3>
+                <h3 className='text-[#111b21] text-[20px] font-medium tracking-wider'>Welcome to Wleness Community </h3>
+                <h4 className='text-[#166e48] text-[19px] font-bold'> {activeUser.name}</h4>
               </div>
             </div>
           </div>
